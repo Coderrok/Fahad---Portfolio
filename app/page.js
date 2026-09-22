@@ -24,14 +24,8 @@ import {
   Check,
   Languages,
   Terminal,
-  Database,
-  Server,
-  Workflow,
-  Wrench,
-  Bot,
-  Globe,
-  Lock,
-  Layers
+  FileText,
+  Download,
 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -163,7 +157,7 @@ export default function Home() {
             <div ref={headlineRef} className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs tracking-wider uppercase font-mono backdrop-blur-md">
                 <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-                ⚡ Software Engineer & IT Systems Specialist
+                ⚡ Software Developer | IT Support & Systems Specialist
               </div>
 
               <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight text-white leading-none">
@@ -171,13 +165,21 @@ export default function Home() {
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-400 font-light leading-relaxed">
-                Software Engineer with experience in IT support, workstation setup, troubleshooting, software development, and cloud/network infrastructure.
+                Software Engineer with 2+ years of experience in IT support, workstation setup, account access troubleshooting, software development, and cloud/network infrastructure.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-2">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition-all shadow-lg shadow-cyan-500/20 flex items-center gap-2"
+                >
+                  <FileText className="w-4 h-4" /> View Resume
+                </a>
                 <button
                   onClick={() => setIsContactOpen(true)}
-                  className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition-all shadow-lg shadow-cyan-500/20 flex items-center gap-2"
+                  className="px-6 py-3 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900/60 text-slate-300 font-medium transition-all backdrop-blur-sm flex items-center gap-2"
                 >
                   <Mail className="w-4 h-4" /> Get in Touch
                 </button>
@@ -185,7 +187,7 @@ export default function Home() {
                   href="#projects"
                   className="px-6 py-3 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900/60 text-slate-300 font-medium transition-all backdrop-blur-sm"
                 >
-                  View Featured Projects
+                  View Projects
                 </a>
               </div>
             </div>
@@ -247,12 +249,12 @@ export default function Home() {
                 </span>
               </div>
               <ul className="text-slate-400 text-sm space-y-2 list-disc list-inside leading-relaxed">
-                <li>Configured and maintained workstations, printers, and network routers across multiple client sites, applying TCP/IP and DNS fundamentals.</li>
-                <li>Set up VPNs, firewalls, and VLANs to secure remote access and segment traffic on LAN/WAN infrastructure.</li>
-                <li>Managed user accounts, password resets, and email access for staff across PAN India locations.</li>
-                <li>Administered cloud infrastructure in Google Workspace and Microsoft 365, handling domain settings and cloud storage.</li>
-                <li>Built and maintained internal web pages with HTML5 and CSS3 to support office documentation and reporting.</li>
-                <li>Diagnosed and resolved hardware and software issues on short notice during peak operational periods.</li>
+                <li>Configured and maintained workstations, printers, and network routers across multiple client sites, applying TCP/IP and DNS fundamentals to keep office networks running without interruption[cite: 2].</li>
+                <li>Set up VPNs, firewalls, and VLANs to secure remote access and segment traffic on LAN/WAN infrastructure for a high-profile company website[cite: 2].</li>
+                <li>Managed user accounts, password resets, and email access for staff across PAN India locations, cutting downtime during account and access issues[cite: 2].</li>
+                <li>Administered cloud infrastructure in Microsoft 365, handling domain settings and cloud storage for daily operations[cite: 2].</li>
+                <li>Built and maintained internal web pages with HTML5 and CSS3 to support office documentation and reporting[cite: 2].</li>
+                <li>Diagnosed and resolved hardware and software issues on short notice, keeping staff productive during peak operational periods[cite: 2].</li>
               </ul>
             </div>
 
@@ -270,11 +272,11 @@ export default function Home() {
                 </span>
               </div>
               <ul className="text-slate-400 text-sm space-y-2 list-disc list-inside leading-relaxed">
-                <li>Designed and deployed Canvas and Model-driven apps in Microsoft Power Apps to automate internal business workflows.</li>
-                <li>Built end-to-end automated processes with Power Automate, removing manual steps from contractual and operational work.</li>
-                <li>Ran requirements analysis with cross-functional teams and translated findings into functional digital tools.</li>
-                <li>Configured Dataverse and SharePoint connectors to keep data storage secure and reporting accurate across systems.</li>
-                <li>Applied UI/UX design principles to refine app interfaces based on user feedback.</li>
+                <li>Designed and deployed Canvas and Model-driven apps in Microsoft Power Apps to automate internal business workflows[cite: 2].</li>
+                <li>Built end-to-end automated processes with Power Automate, removing manual steps from contractual and operational work[cite: 2].</li>
+                <li>Ran requirements analysis with cross-functional teams and translated findings into functional digital tools for client contracts and internal administration[cite: 2].</li>
+                <li>Configured Dataverse and SharePoint connectors to keep data storage secure and reporting accurate across systems[cite: 2].</li>
+                <li>Applied UI/UX design principles to refine app interfaces based on user feedback, improving system reliability and task efficiency[cite: 2].</li>
               </ul>
             </div>
           </div>
@@ -308,7 +310,7 @@ export default function Home() {
                   </a>
                 </div>
                 <p className="text-sm text-slate-400">
-                  An all-encompassing website featuring 114 Surahs, Duas, and essential resources.
+                  An all-encompassing website featuring 114 Surahs, Duas, and essential resources[cite: 2].
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-4">
@@ -331,7 +333,7 @@ export default function Home() {
                   </a>
                 </div>
                 <p className="text-sm text-slate-400">
-                  A one-stop platform featuring an extensive collection of lab programs across all semesters for easy student access.
+                  A one-stop platform featuring an extensive collection of lab programs across all semesters for easy student access[cite: 2].
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-4">
@@ -347,7 +349,7 @@ export default function Home() {
                   <Terminal className="w-4 h-4 text-slate-500" />
                 </div>
                 <p className="text-sm text-slate-400">
-                  Scalable web application built with Flask & PHP with MySQL backend, search, user auth, and integrated hate-speech recognition function.
+                  Scalable web application built with Flask & PHP; MySQL backend with user authentication, search, and real-time updates; implemented hate-speech recognition[cite: 2].
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-4">
@@ -370,16 +372,16 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 text-sm text-slate-300">
-                🏆 <strong className="text-white">Top 10 Position:</strong> National-level HACK THE METAVERSE hackathon by IIIT Bangalore & IEEE Computer Society.
+                🏆 <strong className="text-white">Top 10 Position:</strong> National-level HACK THE METAVERSE hackathon by IIIT Bangalore & IEEE Computer Society[cite: 2].
               </div>
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 text-sm text-slate-300">
-                🚀 <strong className="text-white">Final Round (25/103 Teams):</strong> Niveus Solutions 24-hour hackathon (NIVHACK 2023).
+                🚀 <strong className="text-white">Final Round (25/103 Teams):</strong> Niveus Solutions 24-hour hackathon (NIVHACK 2023)[cite: 2].
               </div>
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 text-sm text-slate-300">
-                💡 <strong className="text-white">Final Round (Out of 124 Teams):</strong> SMART NITTE HACKATHON organized by NMAMIT.
+                💡 <strong className="text-white">Final Round (Out of 124 Teams):</strong> SMART NITTE HACKATHON organized by NMAMIT[cite: 2].
               </div>
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 text-sm text-slate-300">
-                ⚙️ <strong className="text-white">Final Round Qualifier:</strong> ACCS Design Challenge 2023 (ADC 2023) after semi-finals at Maker's Village, Kochi.
+                ⚙️ <strong className="text-white">Final Round Qualifier:</strong> ACCS Design Challenge 2023 (ADC 2023) after semi-finals at Maker's Village, Kochi[cite: 2].
               </div>
             </div>
           </div>
@@ -391,11 +393,11 @@ export default function Home() {
             </div>
             <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
               <h3 className="text-lg font-bold text-white">Bachelor of Engineering (BE) 🎓</h3>
-              <p className="text-cyan-400 text-sm font-mono">Computer Science Engineering</p>
-              <p className="text-slate-400 text-sm">Visvesvaraya Technological University (VTU), Karnataka</p>
+              <p className="text-cyan-400 text-sm font-mono">Computer Science Engineering[cite: 2]</p>
+              <p className="text-slate-400 text-sm">Visvesvaraya Technological University (VTU), Karnataka[cite: 2]</p>
               <div className="flex justify-between items-center pt-2 text-xs font-mono text-slate-500">
-                <span>2020 – 2024</span>
-                <span className="text-cyan-400">CGPA: 7.8</span>
+                <span>2020 – 2024[cite: 2]</span>
+                <span className="text-cyan-400">CGPA: 7.8[cite: 2]</span>
               </div>
             </div>
 
@@ -548,10 +550,18 @@ export default function Home() {
             Open for Software Engineering, Full-Stack Development, and IT Operations roles.
           </p>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center gap-4">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition-all shadow-lg shadow-cyan-500/20 flex items-center gap-2"
+            >
+              <FileText className="w-4 h-4" /> View Resume
+            </a>
             <button
               onClick={() => setIsContactOpen(true)}
-              className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition-all shadow-lg shadow-cyan-500/20"
+              className="px-6 py-3 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900/60 text-slate-300 font-medium transition-all backdrop-blur-sm"
             >
               Contact Information
             </button>
@@ -610,22 +620,30 @@ export default function Home() {
                 </button>
               </div>
 
-              <div className="flex gap-3 pt-2">
+              <div className="grid grid-cols-3 gap-2 pt-2">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-medium flex items-center justify-center gap-1.5 transition-all"
+                >
+                  <FileText className="w-3.5 h-3.5 text-cyan-400" /> Resume
+                </a>
                 <a
                   href="https://linkedin.com/in/mohammedfahad12"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-medium flex items-center justify-center gap-2 transition-all"
+                  className="py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-medium flex items-center justify-center gap-1.5 transition-all"
                 >
-                  <LinkedinIcon className="w-4 h-4 text-cyan-400" /> LinkedIn
+                  <LinkedinIcon className="w-3.5 h-3.5 text-cyan-400" /> LinkedIn
                 </a>
                 <a
                   href="https://github.com/Coderrok"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-medium flex items-center justify-center gap-2 transition-all"
+                  className="py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-medium flex items-center justify-center gap-1.5 transition-all"
                 >
-                  <GithubIcon className="w-4 h-4 text-cyan-400" /> GitHub
+                  <GithubIcon className="w-3.5 h-3.5 text-cyan-400" /> GitHub
                 </a>
               </div>
             </div>
