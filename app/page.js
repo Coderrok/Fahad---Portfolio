@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import Lenis from 'lenis';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -17,8 +16,6 @@ import {
   ExternalLink,
   Sparkles,
   Phone,
-  Globe,
-  Terminal,
   Code2,
   ShieldCheck,
   Cloud,
@@ -26,6 +23,7 @@ import {
   Copy,
   Check,
   Languages,
+  Terminal,
 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -165,7 +163,7 @@ export default function Home() {
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-400 font-light leading-relaxed">
-                Software Engineer with 2+ years of experience in IT support, workstation setup, troubleshooting, software development, and cloud/network infrastructure.
+                Software Engineer with experience in IT support, workstation setup, troubleshooting, software development, and cloud/network infrastructure.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -191,12 +189,10 @@ export default function Home() {
                 className="relative group w-72 sm:w-80 rounded-3xl p-3 bg-gradient-to-b from-cyan-500/20 via-slate-800/40 to-slate-900/80 border border-slate-800 shadow-2xl transition-all duration-500 hover:border-cyan-500/40"
               >
                 <div className="relative w-full h-[380px] rounded-2xl overflow-hidden bg-slate-900">
-                  <Image
+                  <img
                     src="/profile.jpg"
                     alt="Mohammed Fahad"
-                    fill
-                    priority
-                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
                 </div>
