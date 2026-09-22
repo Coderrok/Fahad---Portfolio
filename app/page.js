@@ -24,6 +24,14 @@ import {
   Check,
   Languages,
   Terminal,
+  Database,
+  Server,
+  Workflow,
+  Wrench,
+  Bot,
+  Globe,
+  Lock,
+  Layers
 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -155,7 +163,7 @@ export default function Home() {
             <div ref={headlineRef} className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs tracking-wider uppercase font-mono backdrop-blur-md">
                 <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-                Software Engineer & IT Systems Specialist
+                ⚡ Software Engineer & IT Systems Specialist
               </div>
 
               <h1 className="text-5xl sm:text-7xl font-extrabold tracking-tight text-white leading-none">
@@ -200,7 +208,7 @@ export default function Home() {
                   <span className="flex items-center gap-1.5 text-cyan-400">
                     <Sparkles className="w-3.5 h-3.5" /> BE Computer Science
                   </span>
-                  <span>Mangalore, IN</span>
+                  <span>📍 Mangalore, IN</span>
                 </div>
               </div>
             </div>
@@ -289,7 +297,7 @@ export default function Home() {
             <div className="p-6 rounded-2xl border border-slate-800/80 bg-slate-900/40 backdrop-blur-sm space-y-3 hover:border-cyan-500/40 hover:-translate-y-1 transition-all flex flex-col justify-between">
               <div className="space-y-3">
                 <div className="flex justify-between items-start">
-                  <h3 className="text-lg font-bold text-white">Muslim Verse</h3>
+                  <h3 className="text-lg font-bold text-white">Muslim Verse 🌙</h3>
                   <a
                     href="https://muslimverse.netlify.app"
                     target="_blank"
@@ -304,15 +312,15 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-4">
-                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300">Netlify App</span>
-                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Web App</span>
+                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300 font-mono">⚡ Netlify App</span>
+                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">🌐 Web App</span>
               </div>
             </div>
 
             <div className="p-6 rounded-2xl border border-slate-800/80 bg-slate-900/40 backdrop-blur-sm space-y-3 hover:border-cyan-500/40 hover:-translate-y-1 transition-all flex flex-col justify-between">
               <div className="space-y-3">
                 <div className="flex justify-between items-start">
-                  <h3 className="text-lg font-bold text-white">Lab Programs</h3>
+                  <h3 className="text-lg font-bold text-white">Lab Programs 📚</h3>
                   <a
                     href="https://labprograms.netlify.app"
                     target="_blank"
@@ -327,15 +335,15 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-4">
-                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300">Academic Platform</span>
-                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Web Development</span>
+                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300 font-mono">🎓 Academic Platform</span>
+                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">💻 Web Development</span>
               </div>
             </div>
 
             <div className="p-6 rounded-2xl border border-slate-800/80 bg-slate-900/40 backdrop-blur-sm space-y-3 hover:border-cyan-500/40 hover:-translate-y-1 transition-all flex flex-col justify-between">
               <div className="space-y-3">
                 <div className="flex justify-between items-start">
-                  <h3 className="text-lg font-bold text-white">DEVCOM - Q&A for Developers</h3>
+                  <h3 className="text-lg font-bold text-white">DEVCOM 🛠️</h3>
                   <Terminal className="w-4 h-4 text-slate-500" />
                 </div>
                 <p className="text-sm text-slate-400">
@@ -343,8 +351,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 pt-4">
-                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300">Flask & PHP</span>
-                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">MySQL Backend</span>
+                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-cyan-300 font-mono">🐍 Flask & PHP</span>
+                <span className="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">🗄️ MySQL Backend</span>
               </div>
             </div>
           </div>
@@ -382,7 +390,7 @@ export default function Home() {
               <h2 className="text-2xl font-bold text-white">Education & Languages</h2>
             </div>
             <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-2">
-              <h3 className="text-lg font-bold text-white">Bachelor of Engineering (BE)</h3>
+              <h3 className="text-lg font-bold text-white">Bachelor of Engineering (BE) 🎓</h3>
               <p className="text-cyan-400 text-sm font-mono">Computer Science Engineering</p>
               <p className="text-slate-400 text-sm">Visvesvaraya Technological University (VTU), Karnataka</p>
               <div className="flex justify-between items-center pt-2 text-xs font-mono text-slate-500">
@@ -393,12 +401,18 @@ export default function Home() {
 
             <div className="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80 space-y-3">
               <div className="flex items-center gap-2 text-cyan-400 text-sm font-semibold">
-                <Languages className="w-4 h-4" /> Multilingual Proficiency
+                <Languages className="w-4 h-4" /> 🗣️ Multilingual Proficiency
               </div>
               <div className="flex flex-wrap gap-2">
-                {['English', 'Hindi', 'Kannada', 'Malayalam', 'Tamil'].map((lang) => (
-                  <span key={lang} className="px-3 py-1 rounded-lg bg-slate-800 text-xs text-slate-300 font-medium">
-                    {lang}
+                {[
+                  { lang: 'English', flag: '🇬🇧' },
+                  { lang: 'Hindi', flag: '🇮🇳' },
+                  { lang: 'Kannada', flag: '🇮🇳' },
+                  { lang: 'Malayalam', flag: '🇮🇳' },
+                  { lang: 'Tamil', flag: '🇮🇳' },
+                ].map(({ lang, flag }) => (
+                  <span key={lang} className="px-3 py-1 rounded-lg bg-slate-800 text-xs text-slate-300 font-medium flex items-center gap-1.5">
+                    <span>{flag}</span> {lang}
                   </span>
                 ))}
               </div>
@@ -406,7 +420,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* TECHNICAL SKILLS */}
+        {/* TECHNICAL SKILLS MATRIX */}
         <section
           ref={addToSections}
           className="py-24 border-t border-slate-800/80"
@@ -414,45 +428,108 @@ export default function Home() {
           <div className="flex items-center gap-3 mb-12">
             <Cpu className="w-6 h-6 text-cyan-400" />
             <h2 className="text-3xl font-bold tracking-tight text-white">
-              Technical Skills Matrix
+              Technical Skills Matrix 🛠️
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-3">
-              <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
-                <Code2 className="w-4 h-4" /> Programming & Web
+            {/* Programming & Web */}
+            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-4 hover:border-cyan-500/30 transition-all">
+              <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm border-b border-slate-800 pb-2">
+                <Code2 className="w-4 h-4" /> 💻 Programming & Web
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
-                C#, Python, JavaScript, SQL, ASP.NET, React.js, HTML5, CSS3, SQL Server, MySQL
-              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  { name: 'C#', symbol: '♯' },
+                  { name: 'Python', symbol: '🐍' },
+                  { name: 'JavaScript', symbol: '🟨 JS' },
+                  { name: 'SQL', symbol: '🗄️' },
+                  { name: 'ASP.NET', symbol: '🌐' },
+                  { name: 'React.js', symbol: '⚛️' },
+                  { name: 'HTML5', symbol: '🟧' },
+                  { name: 'CSS3', symbol: '🟦' },
+                  { name: 'SQL Server', symbol: '📊' },
+                  { name: 'MySQL', symbol: '🐬' },
+                ].map((skill) => (
+                  <span
+                    key={skill.name}
+                    className="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50 text-xs text-slate-300 font-mono flex items-center gap-1"
+                  >
+                    <span className="text-cyan-400">{skill.symbol}</span> {skill.name}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-3">
-              <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
-                <ShieldCheck className="w-4 h-4" /> Networking
+            {/* Networking */}
+            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-4 hover:border-cyan-500/30 transition-all">
+              <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm border-b border-slate-800 pb-2">
+                <ShieldCheck className="w-4 h-4" /> 📡 Networking & Security
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
-                TCP/IP, DNS, VPNs, Firewalls, VLANs, LAN/WAN Architecture
-              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  { name: 'TCP/IP', symbol: '🔌' },
+                  { name: 'DNS', symbol: '🌐' },
+                  { name: 'VPNs', symbol: '🔒' },
+                  { name: 'Firewalls', symbol: '🧱' },
+                  { name: 'VLANs', symbol: '🔀' },
+                  { name: 'LAN/WAN', symbol: '🕸️' },
+                ].map((skill) => (
+                  <span
+                    key={skill.name}
+                    className="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50 text-xs text-slate-300 font-mono flex items-center gap-1"
+                  >
+                    <span className="text-cyan-400">{skill.symbol}</span> {skill.name}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-3">
-              <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
-                <Cloud className="w-4 h-4" /> Cloud & DevOps
+            {/* Cloud & DevOps */}
+            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-4 hover:border-cyan-500/30 transition-all">
+              <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm border-b border-slate-800 pb-2">
+                <Cloud className="w-4 h-4" /> ☁️ Cloud & DevOps
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
-                AWS, Google Cloud (Vertex AI), Docker, GitLab
-              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  { name: 'AWS', symbol: '☁️' },
+                  { name: 'Google Cloud', symbol: '🟡 GCP' },
+                  { name: 'Vertex AI', symbol: '🧠' },
+                  { name: 'Docker', symbol: '🐳' },
+                  { name: 'GitLab', symbol: '🦊' },
+                ].map((skill) => (
+                  <span
+                    key={skill.name}
+                    className="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50 text-xs text-slate-300 font-mono flex items-center gap-1"
+                  >
+                    <span className="text-cyan-400">{skill.symbol}</span> {skill.name}
+                  </span>
+                ))}
+              </div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-3">
-              <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm">
-                <Sparkles className="w-4 h-4" /> AI & Developer Tools
+            {/* AI & Developer Tools */}
+            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-4 hover:border-cyan-500/30 transition-all">
+              <div className="flex items-center gap-2 text-cyan-400 font-semibold text-sm border-b border-slate-800 pb-2">
+                <Sparkles className="w-4 h-4" /> 🤖 AI & Dev Tools
               </div>
-              <p className="text-xs text-slate-400 leading-relaxed">
-                Generative AI, GitHub Copilot, Gemini CLI, Claude
-              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  { name: 'Generative AI', symbol: '✨' },
+                  { name: 'GitHub Copilot', symbol: '🤖' },
+                  { name: 'Gemini CLI', symbol: '💎' },
+                  { name: 'Claude', symbol: '🔮' },
+                  { name: 'Power Apps', symbol: '⚡' },
+                  { name: 'Power Automate', symbol: '🔄' },
+                ].map((skill) => (
+                  <span
+                    key={skill.name}
+                    className="px-2.5 py-1 rounded-md bg-slate-800/80 border border-slate-700/50 text-xs text-slate-300 font-mono flex items-center gap-1"
+                  >
+                    <span className="text-cyan-400">{skill.symbol}</span> {skill.name}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -466,7 +543,7 @@ export default function Home() {
           <div className="inline-flex p-3 rounded-full bg-slate-900 border border-slate-800 text-cyan-400 mb-2">
             <Mail className="w-6 h-6" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">Let's Connect</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">Let's Connect 🤝</h2>
           <p className="text-slate-400 max-w-md mx-auto text-sm">
             Open for Software Engineering, Full-Stack Development, and IT Operations roles.
           </p>
@@ -480,8 +557,8 @@ export default function Home() {
             </button>
           </div>
 
-          <p className="text-xs text-slate-600 pt-12">
-            © {new Date().getFullYear()} Mohammed Fahad. Built with Next.js & GSAP.
+          <p className="text-xs text-slate-600 pt-12 font-mono">
+            © {new Date().getFullYear()} Mohammed Fahad. Built with Next.js & GSAP 🚀
           </p>
         </footer>
       </div>
@@ -498,8 +575,8 @@ export default function Home() {
             </button>
 
             <div className="space-y-1">
-              <h3 className="text-2xl font-bold text-white">Mohammed Fahad</h3>
-              <p className="text-xs text-cyan-400 font-mono">Software Developer | Mangalore, India</p>
+              <h3 className="text-2xl font-bold text-white">Mohammed Fahad 👋</h3>
+              <p className="text-xs text-cyan-400 font-mono">Software Developer | 📍 Mangalore, India</p>
             </div>
 
             <div className="space-y-4 pt-2">
