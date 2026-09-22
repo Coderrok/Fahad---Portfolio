@@ -182,19 +182,19 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Profile Frame */}
+            {/* Profile Frame with Photo */}
             <div className="lg:col-span-5 flex justify-center">
               <div
                 ref={profileCardRef}
                 className="relative group w-72 sm:w-80 rounded-3xl p-3 bg-gradient-to-b from-cyan-500/20 via-slate-800/40 to-slate-900/80 border border-slate-800 shadow-2xl transition-all duration-500 hover:border-cyan-500/40"
               >
-                <div className="relative w-full h-[380px] rounded-2xl overflow-hidden bg-slate-900">
+                <div className="relative w-full h-[380px] rounded-2xl overflow-hidden bg-slate-900 flex items-center justify-center">
                   <img
-                    src="/profile.jpg"
+                    src="/profile.jpeg"
                     alt="Mohammed Fahad"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60 pointer-events-none" />
                 </div>
                 <div className="pt-4 pb-2 px-2 flex items-center justify-between text-xs text-slate-400 font-mono">
                   <span className="flex items-center gap-1.5 text-cyan-400">
@@ -503,7 +503,6 @@ export default function Home() {
             </div>
 
             <div className="space-y-4 pt-2">
-              {/* Email */}
               <div className="flex items-center justify-between p-3 rounded-xl bg-slate-800/50 border border-slate-700/50">
                 <div className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-cyan-400" />
@@ -519,7 +518,6 @@ export default function Home() {
                 </button>
               </div>
 
-              {/* Phone */}
               <div className="flex items-center justify-between p-3 rounded-xl bg-slate-800/50 border border-slate-700/50">
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-cyan-400" />
@@ -535,7 +533,6 @@ export default function Home() {
                 </button>
               </div>
 
-              {/* Socials */}
               <div className="flex gap-3 pt-2">
                 <a
                   href="https://linkedin.com/in/mohammedfahad12"
